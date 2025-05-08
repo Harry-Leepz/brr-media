@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+import TodoForm from "../components/TodoForm";
+import TodoItem from "../components/TodoItem";
+
 import type { Todo } from "../types";
 
 import todoData from "../data/todos.json";
@@ -56,73 +59,19 @@ export default function TodoList() {
 
   return (
     <div className='space-y-4 max-w-xl mx-auto'>
-      <div className='flex gap-2 mb-4'>
-        <input
-          type='text'
-          value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
-          placeholder='Add a new task...'
-          className='flex-grow p-2 border rounded'
-        />
-        <button
-          onClick={addTodo}
-          className='bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700'
-        >
-          Add
-        </button>
-      </div>
-
+      <TodoForm newTask={newTask} setNewTask={setNewTask} addTodo={addTodo} />
       {todos.map((todo) => (
-        <div
+        <TodoItem
           key={todo.id}
-          className='bg-white p-4 rounded shadow flex justify-between items-center'
-        >
-          <div className='flex items-center'>
-            <input
-              type='checkbox'
-              checked={todo.completed}
-              onChange={() => toggleComplete(todo.id)}
-              className='mr-2'
-            />
-            {editingId === todo.id ? (
-              <input
-                type='text'
-                value={editingText}
-                onChange={(e) => setEditingText(e.target.value)}
-                className='border p-1 rounded'
-              />
-            ) : (
-              <span
-                className={todo.completed ? "line-through text-gray-500" : ""}
-              >
-                {todo.task}
-              </span>
-            )}
-          </div>
-          <div className='flex gap-2'>
-            {editingId === todo.id ? (
-              <button
-                onClick={() => saveEdit(todo.id)}
-                className='text-green-600 hover:text-green-800 text-sm'
-              >
-                Save
-              </button>
-            ) : (
-              <button
-                onClick={() => startEditing(todo.id, todo.task)}
-                className='text-blue-500 hover:text-blue-700 text-sm'
-              >
-                Edit
-              </button>
-            )}
-            <button
-              onClick={() => deleteTodo(todo.id)}
-              className='text-red-500 hover:text-red-700 text-sm'
-            >
-              Delete
-            </button>
-          </div>
-        </div>
+          todo={todo}
+          editingId={editingId}
+          editingText={editingText}
+          toggleComplete={toggleComplete}
+          startEditing={startEditing}
+          setEditingText={setEditingText}
+          saveEdit={saveEdit}
+          deleteTodo={deleteTodo}
+        />
       ))}
     </div>
   );
