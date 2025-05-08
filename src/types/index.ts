@@ -8,3 +8,11 @@ export type Staff = {
   status: string;
   id: number;
 };
+
+export type Ticket = {
+  id: number;
+  issueType: string;
+  status: string;
+  createdDate: string;
+  description: string;
+};
