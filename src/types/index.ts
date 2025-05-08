@@ -16,3 +16,9 @@ export type Ticket = {
   createdDate: string;
   description: string;
 };
+
+export type Todo = {
+  id: number;
+  task: string;
+  completed: boolean;
+};

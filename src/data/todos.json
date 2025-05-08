@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "task": "Refactor login component",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "task": "Update favicon",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "task": "Fix header alignment on mobile",
+    "completed": false
+  },
+  {
+    "id": 4,
+    "task": "Write unit tests for staff page",
+    "completed": false
+  },
+  {
+    "id": 5,
+    "task": "Optimize ticket loading performance",
+    "completed": true
+  },
+  {
+    "id": 6,
+    "task": "Set up CI/CD pipeline",
+    "completed": true
+  },
+  {
+    "id": 7,
+    "task": "Review pull requests",
+    "completed": true
+  },
+  {
+    "id": 8,
+    "task": "Update team photos",
+    "completed": true
+  },
+  {
+    "id": 9,
+    "task": "Check Google Workspace quotas",
+    "completed": false
+  },
+  {
+    "id": 10,
+    "task": "Test file upload feature",
+    "completed": true
+  }
+]
