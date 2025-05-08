@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "issueType": "Software",
+    "status": "In Progress",
+    "createdDate": "2025-04-21T00:00:00",
+    "description": "Sample description for ticket 1"
+  },
+  {
+    "id": 2,
+    "issueType": "Other",
+    "status": "In Progress",
+    "createdDate": "2025-04-19T00:00:00",
+    "description": "Sample description for ticket 2"
+  },
+  {
+    "id": 3,
+    "issueType": "Hardware",
+    "status": "In Progress",
+    "createdDate": "2025-04-23T00:00:00",
+    "description": "Sample description for ticket 3"
+  },
+  {
+    "id": 4,
+    "issueType": "Hardware",
+    "status": "Open",
+    "createdDate": "2025-04-22T00:00:00",
+    "description": "Sample description for ticket 4"
+  },
+  {
+    "id": 5,
+    "issueType": "Account Access",
+    "status": "In Progress",
+    "createdDate": "2025-04-26T00:00:00",
+    "description": "Sample description for ticket 5"
+  },
+  {
+    "id": 6,
+    "issueType": "Software",
+    "status": "In Progress",
+    "createdDate": "2025-04-26T00:00:00",
+    "description": "Sample description for ticket 6"
+  },
+  {
+    "id": 7,
+    "issueType": "Hardware",
+    "status": "In Progress",
+    "createdDate": "2025-04-18T00:00:00",
+    "description": "Sample description for ticket 7"
+  },
+  {
+    "id": 8,
+    "issueType": "Hardware",
+    "status": "Resolved",
+    "createdDate": "2025-04-26T00:00:00",
+    "description": "Sample description for ticket 8"
+  },
+  {
+    "id": 9,
+    "issueType": "Network",
+    "status": "Open",
+    "createdDate": "2025-04-30T00:00:00",
+    "description": "Sample description for ticket 9"
+  },
+  {
+    "id": 10,
+    "issueType": "Network",
+    "status": "Open",
+    "createdDate": "2025-04-28T00:00:00",
+    "description": "Sample description for ticket 10"
+  }
+]

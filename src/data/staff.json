@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "User 1",
+    "role": "IT Support",
+    "email": "user1@brrmedia.com",
+    "status": "inactive",
+    "lastLogin": "2025-04-21T15:29:25.745883",
+    "driveUsageGB": 10.24,
+    "deviceType": "iMac"
+  },
+  {
+    "id": 2,
+    "name": "User 2",
+    "role": "QA Engineer",
+    "email": "user2@brrmedia.com",
+    "status": "inactive",
+    "lastLogin": "2025-04-25T15:29:25.745912",
+    "driveUsageGB": 29.37,
+    "deviceType": "iMac"
+  },
+  {
+    "id": 3,
+    "name": "User 3",
+    "role": "Project Manager",
+    "email": "user3@brrmedia.com",
+    "status": "inactive",
+    "lastLogin": "2025-04-09T15:29:25.745924",
+    "driveUsageGB": 27.98,
+    "deviceType": "MacBook Pro"
+  },
+  {
+    "id": 4,
+    "name": "User 4",
+    "role": "Developer",
+    "email": "user4@brrmedia.com",
+    "status": "inactive",
+    "lastLogin": "2025-04-30T15:29:25.745932",
+    "driveUsageGB": 38.69,
+    "deviceType": "Mac Mini"
+  },
+  {
+    "id": 5,
+    "name": "User 5",
+    "role": "IT Support",
+    "email": "user5@brrmedia.com",
+    "status": "active",
+    "lastLogin": "2025-04-24T15:29:25.745939",
+    "driveUsageGB": 25.82,
+    "deviceType": "iMac"
+  },
+  {
+    "id": 6,
+    "name": "User 6",
+    "role": "Project Manager",
+    "email": "user6@brrmedia.com",
+    "status": "active",
+    "lastLogin": "2025-05-06T15:29:25.745946",
+    "driveUsageGB": 41.53,
+    "deviceType": "iMac"
+  },
+  {
+    "id": 7,
+    "name": "User 7",
+    "role": "Developer",
+    "email": "user7@brrmedia.com",
+    "status": "inactive",
+    "lastLogin": "2025-04-27T15:29:25.745952",
+    "driveUsageGB": 21.61,
+    "deviceType": "Mac Mini"
+  },
+  {
+    "id": 8,
+    "name": "User 8",
+    "role": "Developer",
+    "email": "user8@brrmedia.com",
+    "status": "active",
+    "lastLogin": "2025-04-24T15:29:25.745961",
+    "driveUsageGB": 24.08,
+    "deviceType": "Linux Workstation"
+  },
+  {
+    "id": 9,
+    "name": "User 9",
+    "role": "QA Engineer",
+    "email": "user9@brrmedia.com",
+    "status": "active",
+    "lastLogin": "2025-04-12T15:29:25.745978",
+    "driveUsageGB": 23.43,
+    "deviceType": "Mac Mini"
+  },
+  {
+    "id": 10,
+    "name": "User 10",
+    "role": "Designer",
+    "email": "user10@brrmedia.com",
+    "status": "inactive",
+    "lastLogin": "2025-04-12T15:29:25.745989",
+    "driveUsageGB": 45.08,
+    "deviceType": "MacBook Pro"
+  }
+]
