@@ -42,8 +42,11 @@ export default function ITRequestForm() {
     >
       <h2 className='text-xl font-bold mb-4'>Submit IT Request</h2>
 
-      <label className='block mb-2'>Issue Type</label>
+      <label className='block mb-2' htmlFor='issue-type'>
+        Issue Type
+      </label>
       <select
+        id='issue-type'
         value={issueType}
         onChange={(e) => setIssueType(e.target.value)}
         className='w-full p-2 border rounded mb-4'
@@ -59,8 +62,11 @@ export default function ITRequestForm() {
         ))}
       </select>
 
-      <label className='block mb-2'>Description</label>
+      <label className='block mb-2' htmlFor='description'>
+        Description
+      </label>
       <textarea
+        id='description'
         value={description}
         onChange={(e) => setDescription(e.target.value)}
         className='w-full p-2 border rounded mb-4'
