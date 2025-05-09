@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# BRR Media Team Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight internal dashboard for managing IT tickets, staff, tasks, and requests. Built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Setup Instructions
 
-## Expanding the ESLint configuration
+1. **Install dependencies:**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+   ```bash
+   npm install
+   ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Start the development server:**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+   ```bash
+   npm run dev
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Run tests:**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+   ```bash
+   npm run test
+   ```
+
+Make sure you're using Node.js version 18+ and have `npm` installed.
+
+---
+
+## ✅ Summary of Features Completed
+
+- [x] Responsive navigation bar with routing via React Router
+- [x] Dashboard page with:
+  - Summary cards (team members, open tickets, pending tasks)
+  - Recent tickets and tasks lists
+- [x] Staff Directory with mock data displayed in styled cards
+- [x] IT Request Form with file upload and simulated submission
+- [x] Tickets page with dynamic cards from JSON
+- [x] To-Do List page with full CRUD (Create, Read, Update, Delete) functionality
+- [x] Reusable components: `StaffCard`, `TicketCard`, `TodoItem`, `DashboardCard`, etc.
+- [x] Mock data loaded asynchronously to simulate API calls
+- [x] Unit/component tests using Vitest and Testing Library
+
+---
+
+## 🧠 Assumptions Made
+
+- The project is run locally in a controlled internal environment (no real API or backend).
+- All user roles have equal access; no auth/authz system implemented.
+- File uploads are not processed, just simulated for submission.
+- Mock data is used to simulate tickets, staff, and to-do lists.
+- Style and layout choices prioritize clarity over branding.
+
+---
+
+## 🚀 If I Had More Time
+
+- Persist to-dos and requests using localStorage or a mock backend
+- Add full user authentication and role-based access (e.g., Admin vs. Staff)
+- Improve form validation and error handling
+- Add animations and loading indicators (e.g., skeleton loaders)
+- Polish responsive design for mobile views
+- Create a theme toggle (dark/light mode)
+- Export reports (e.g., open tickets summary)
+- Add E2E tests (e.g., with Playwright or Cypress)
+
+---
